@@ -1,0 +1,17 @@
+source py3/bin/activate
+jupyter-notebook
+
+influxdb 
+$ sudo systemctl unmask influxdb.service
+$ sudo systemctl start influxdb
+$ influx
+http://localhost:8888
+http://localhost:8086
+
+graphana
+$ sudo systemctl start grafana-server
+$ sudo systemctl status grafana-server
+$ sudo systemctl enable grafana-server.service
+http://localhost:3000
+
+
